@@ -1,0 +1,55 @@
+[
+    {
+        "Name": "FlyeChat",
+        "Image": "FlyeChatLogo.png",
+        "Info": [
+            "FlyeChat is a web-based, real time chat client, similar to Discord.",
+            "I originally started developing it at the start of 2021 in January, using Python with a client and server application, connected using the socketserver library. It worked quite well, even integrating Discord Rich Presence, however there was one major flaw: whenever I converted it to an exe for other people to try, Windows Defender would flag it as a virus.",
+            "soontm"
+        ]
+    },
+    {
+        "Name": "Turret Malfunction",
+        "Image": "TurretMalfunctionLogo.png",
+        "Info": [
+            "Turret Malfunction is a browser game I made with Unity for the GMTK Game Jam 2020 during lockdown, in collaberation with SirHorseIV (he designed the artwork).",
+            "You can play it here: <a class='font-bold' target='_blank' href='https://flye001.itch.io/turret-malfunction'>https://flye001.itch.io/turret-malfunction</a>"
+        ]
+    },
+    {
+        "Name": "FlyeWords",
+        "Image": "LogoWhite.png",
+        "Info": [
+            "FlyeWords is a simple word game influenced by the popular game Wordle.",
+            "I made it for fun to improve my desiging skills (so please don't sue me people that made Wordle).",
+            "You can play FlyeWords here: <a class='font-bold' target='_blank' href='https://flyewords.flye001.com'>https://flyewords.flye001.com</a>"
+        ]
+    },
+    {
+        "Name": "ETS2/ATS Trackers",
+        "Image": "ETS2Logo.png",
+        "Info": [
+            "FlyeTracker is a system to log your deliveries in the games Euro Truck Simulator 2 & American Truck Simulator. There is a downloadable tracker software which connects to the games and logs and sends your deliveries to the server. You can then view all your deliveries online in the web application.",
+            "I have also made several custom Drivers Hubs with trackers for VTCs.",
+            "You can access FlyeTracker here: <a class='font-bold' target='_blank' href='https://tracker.flye001.com'>https://tracker.flye001.com</a>"
+        ]
+    },
+    {
+        "Name": "Discord Bots",
+        "Image": "DiscordLogo.png",
+        "Info": [
+            "I have made several Discord bots before in several languages, including Python and C#; some just for fun and my own use, and some for other people to buy. If you would be interested in getting a custom Discord bot for your server, feel free to message me on Discord.",
+            "You can join my Discord server here: <a class='font-bold' target='_blank' href='https://discord.gg/FvvYGCjJdk'>https://discord.gg/FvvYGCjJdk</a>"
+        ]
+    },
+    {
+        "Name": "Pokedex",
+        "Image": "Pokedex.png",
+        "Info": [
+            "In June 2016, I embarked on my first ever real journey into development. I decided to make a real life Pokedex, powered by a Raspberry Pi.",
+            "The project turned out to be a great success, and I have made improved versions since.",
+            "If you'd like to find out more about them, there is channel in my Discord Server detailing the whole journey.",
+            "You can access that channel with <a class='font-bold' target='_blank' href='https://discord.com/channels/805089786691584050/911326416522600529'>this link</a>."
+        ]
+    }
+]

@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.russo-one {
+    font-family: 'Russo One', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.drop-shadow-custom {
+    filter: drop-shadow(0px 0px 80px #fff);
+}
+
+/* Home Page */
+
+.icon-div {
+    @apply m-5 text-center text-2xl cursor-pointer hover:text-slate-300;
+}
+
+.icon-div:hover {
+    text-shadow: 0px 0px 3px #fff;
+}
+
+.icon {
+    @apply text-5xl mb-2;
+}
+
+/* Projects Page */
+
+.project-card {
+    @apply bg-card-bg flex-1 p-5 mx-5 text-center rounded-lg mt-5 min-w-[20rem] max-w-min flex flex-col justify-between cursor-pointer;
+}
+
+.project-card h1 {
+    @apply text-white text-3xl mt-3;
+}
+
+.project-card img {
+    @apply px-20 mx-auto object-contain aspect-auto;
+}
+
+.project-info-card {
+    @apply flex bg-card-bg russo-one text-white flex-1 p-3 mx-5 text-left rounded-lg mt-5 min-w-[20rem] max-w-min flex-col justify-between;
+}
+
+.project-info-card h1 {
+    @apply text-xl;
+}
+
+.project-info-card p {
+    @apply roboto text-sm mt-2;
+}
+
+.project-info-card i {
+    @apply cursor-pointer;
+}
+
+/* Animations */
+
+@media only screen and (min-width: 600px) {
+    @keyframes line {
+      0% {
+        height: 0px;
+      }
+      100% {
+        height: 450px;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    @keyframes line {
+      0% {
+        width: 0px;
+      }
+      100% {
+        width: 75%;
+      }
+    }
+  }
+
+  @keyframes text {
+    0% {
+      transform: translate(50px, 0);
+      opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes image {
+    0% {
+      transform: translate(-60px, 0) scale(.5);
+      opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0) scale(.5);
+        opacity: 1;
+    }
+  }
+
+  @keyframes buttons {
+    0% {
+      transform: translate(0, 60px);
+      opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+  }
+
+.line {
+    animation: 0.5s ease-out 0s 1 line;
+}
+
+.text {
+    opacity: 0;
+    animation: 0.5s ease-out 0.5s 1 forwards text;
+}
+
+.image {
+    opacity: 0;
+    transform: scale(.5, .5);
+    animation: 0.5s ease-out 0.5s 1 forwards image;
+}
+
+.buttons {
+    opacity: 0;
+    animation: 1s ease-out 1s 1 forwards buttons;
+}
