@@ -13,6 +13,12 @@
   </div>
 </template>
 
+<style scoped>
+a {
+  @apply font-bold
+}
+</style>
+
 <script>
 export default {
   props: ['Details'],

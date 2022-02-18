@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark-black h-fit grid grid-cols-1 content-center md:flex md:flex-col md:justify-center md:items-center">
+  <div class="bg-dark-black select-none h-fit grid grid-cols-1 content-center md:flex md:flex-col md:justify-center md:items-center">
 
         <div class="md:flex md:justify-center md:items-center">
             <img src="@/assets/img/LogoWhite.png"

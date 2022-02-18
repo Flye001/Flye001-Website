@@ -4,8 +4,9 @@
         "Image": "FlyeChatLogo.png",
         "Info": [
             "FlyeChat is a web-based, real time chat client, similar to Discord.",
-            "I originally started developing it at the start of 2021 in January, using Python with a client and server application, connected using the socketserver library. It worked quite well, even integrating Discord Rich Presence, however there was one major flaw: whenever I converted it to an exe for other people to try, Windows Defender would flag it as a virus.",
-            "soontm"
+            "I originally started developing it at the start of 2021 in January, using Python with a client and server application, connected using the socketserver library. Since then its been redeveloped twice, using asp.net and c#.",
+            "There will be more information about FlyeChat soon, but for now:",
+            "You can it here: <a class='font-bold' target='_blank' href='https://flyechatnew.azurewebsites.net/'>https://flyechatnew.azurewebsites.net/</a>"
         ]
     },
     {
