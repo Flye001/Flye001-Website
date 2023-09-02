@@ -1,0 +1,128 @@
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fPop {
+  from {
+    transform: translate(-70%, 60%) rotate(17deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flPop {
+  from {
+    transform: translate(-40%, 20%) rotate(4deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flyPop {
+  from {
+    transform: translate(-22%, -44%) rotate(-12deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flyePop {
+  from {
+    transform: translate(0%, 23%) rotate(7deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flye0Pop {
+  from {
+    transform: translate(5%, -12%) rotate(5deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flye00Pop {
+  from {
+    transform: translate(57%, 63%) rotate(-3deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flye001Pop {
+  from {
+    transform: translate(100%, 35%) rotate(1deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes nameFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate, .buttons {
+  animation: nameFade 1s ease-in-out 0s 1 forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.expload {
+  animation: nameFade 1s ease-in-out 0s 1 forwards;
+}
+
+.expload > :nth-child(1) {
+  transform: translate(-70%, 60%) rotate(17deg);
+  animation: fPop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+  animation: flPop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(3) {
+  transform: translate(-22%, -44%) rotate(-12deg);
+  animation: flyPop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(4) {
+  transform: translate(0%, 23%) rotate(7deg);
+  animation: flyePop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(5) {
+  transform: translate(5%, -12%) rotate(5deg);
+  animation: flye0Pop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(6) {
+  transform: translate(57%, 63%) rotate(-3deg);
+  animation: flye00Pop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(7) {
+  transform: translate(100%, 35%) rotate(1deg);
+  animation: flye001Pop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload span {
+  display: inline-block;
+  transition: 1s;
+}/*# sourceMappingURL=animations.css.map */

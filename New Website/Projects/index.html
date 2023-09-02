@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<script src="https://kit.fontawesome.com/c26eb69760.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="/assets/favicon.ico">
+	<title>Flye001 - Projects</title>
+</head>
+
+<body class="projects-page">
+
+	<div class="container">
+		<a class="back-arrow" href="/">
+			<i class="fa-solid fa-chevron-left"></i>
+		</a>
+
+		<h1>Projects</h1>
+
+		<div class="card-btns">
+
+			<button class="" id="leftButton" onclick="ShuffleL()">
+				<i class="fa-solid fa-chevron-left"></i>
+			</button>
+
+			<div class="card-container">
+				<div id="cards">
+					<div class="card" onclick="window.location='/Projects/FlyeChat';">
+						<div class="card-content">
+							<div class="card-image">
+								<img src="/assets/img/FlyeChatLogo.png">
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-solid fa-comments"></i>
+									<div class="card-info-title">
+										<h3>FlyeChat</h3>
+										<h4>Real time web chat</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" onclick="window.location='/Projects/TurretMalfunction';">
+						<div class="card-content">
+							<div class="card-image">
+								<img src="/assets/img/TurretMalfunctionLogo.png">
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-solid fa-shield"></i>
+									<div class="card-info-title">
+										<h3>Turret Malfunction</h3>
+										<h4>Simple browser game</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" onclick="window.location='/Projects/FlyeWords';">
+						<div class="card-content">
+							<div class="card-image">
+								<i class="fa-solid fa-keyboard"></i>
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-solid fa-keyboard"></i>
+									<div class="card-info-title">
+										<h3>FlyeWords</h3>
+										<h4>Guess the word in 5 guesses</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" onclick="window.location='/Projects/Pokedex';">
+						<div class="card-content">
+							<div class="card-image">
+								<i class="fa-brands fa-raspberry-pi"></i>
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-brands fa-raspberry-pi"></i>
+									<div class="card-info-title">
+										<h3>Pokedex</h3>
+										<h4>Real life, Raspberry Pi-powered Pokedex</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<div class="card-image">
+								<i class="fa-solid fa-truck"></i>
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-solid fa-truck"></i>
+									<div class="card-info-title">
+										<h3>Truck Sim</h3>
+										<h4>Custom ETS2/ATS trackers and Driver Hubs</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<div class="card-image">
+								<i class="fa-solid fa-jet-fighter"></i>
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-solid fa-jet-fighter"></i>
+									<div class="card-info-title">
+										<h3>PlaneHub</h3>
+										<h4>A social media platform for aviation lovers</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<div class="card-image">
+								<i class="fa-brands fa-discord"></i>
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-brands fa-discord"></i>
+									<div class="card-info-title">
+										<h3>Discord Bots</h3>
+										<h4>Completely custom Discord Bots</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<div class="card-image">
+								<i class="fa-solid fa-box-open"></i>
+							</div>
+							<div class="CardInfoWrapper">
+								<div class="card-info">
+									<i class="fa-solid fa-box-open"></i>
+									<div class="card-info-title">
+										<h3>FlyeFreight</h3>
+										<h4>A Level Computer Science Coursework</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="active" id="rightButton" onclick="ShuffleR()">
+				<i class="fa-solid fa-chevron-right"></i>
+			</button>
+
+		</div>
+
+		<div class="indicator">
+			<div class="paginator active" id="page1">
+
+			</div>
+			<div class="paginator" id="page2">
+
+			</div>
+		</div>
+
+		<svg width="879" height="364" viewBox="0 0 879 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M-151.053 43.2756L-155.25 46.4179C-231.608 103.584 -260.696 204.569 -219.143 290.428C-98.8507 538.981 89.2873 847.259 89.0639 856.547C88.7928 867.814 213.237 811.87 275.493 782.49L830.483 458.146C908.898 412.319 886.546 293.441 796.842 279.225C765.754 274.298 739.012 254.543 725.166 226.275L714.499 204.498C685.337 144.962 619.155 113.191 554.461 127.671L443.852 152.427C380.168 166.681 313.463 150.954 262.854 109.753L223.188 77.4608C199.345 58.0504 171.583 44.0317 141.809 36.3676L29.6977 7.5092C-32.859 -8.59337 -99.3433 4.56228 -151.053 43.2756Z"
+				fill="url(#paint0_linear_2_48)" fill-opacity="0.97" />
+			<defs>
+				<linearGradient id="paint0_linear_2_48" x1="-55.5" y1="-186" x2="793" y2="512.5"
+					gradientUnits="userSpaceOnUse">
+					<stop stop-color="#8A61FF" />
+					<stop offset="1" stop-color="#E0756E" />
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
+
+	<script src="/assets/js/projects.js"></script>
+</body>
+
+</html>
+
+
+
+<script>
+	document.getElementById('cards').onmousemove = (e) => {
+		for (const card of document.getElementsByClassName('card')) {
+			const rect = card.getBoundingClientRect(),
+				x = e.clientX - rect.left,
+				y = e.clientY - rect.top;
+
+			card.style.setProperty('--mouse-x', `${x}px`);
+			card.style.setProperty('--mouse-y', `${y}px`);
+		}
+	};
+</script>

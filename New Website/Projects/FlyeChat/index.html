@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c26eb69760.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>Flye001 - FlyeChat</title>
+</head>
+
+<body>
+    <div class="container">
+        <a class="back-arrow" href="/Projects">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+
+        <div class="project">
+            <h1>FlyeChat</h1>
+            <p>FlyeChat is a web-based, real time chat client, similar to Discord.</p>
+
+            <h2>History Of FlyeChat</h2>
+            <p>I originally started developing it at the start of 2021 in January, using Python with a client and server
+                application, connected using the socketserver library. It worked quite well, even integrating Discord
+                Rich Presence, however there was one major flaw: whenever I converted it to an exe for other people to
+                try, Windows Defender would flag it as a virus.</p>
+            <p>It was this that ultimately drove me to make a web version. I firstly made a Python web version using
+                Flask, however my HTML/CSS skills were not very good. It was at this point <a
+                    href="https://conorwestley.co.uk/" target="_blank">Conor</a> joined the project. Ever since, he has
+                been responsible for making the great designs for FlyeChat. The Flask web version worked fairly well,
+                but I felt limited by Python and wanted to try something new.</p>
+            <p>At this point, I decided to learn Microsoft's ASP.NET. I remade the whole system from scratch using
+                ASP.NET and the SignalR, and it turned out pretty well.</p>
+
+            <h2>FlyeChat V3</h2>
+            <p>During late 2021, I once again decided to recreate FlyeChat with the knowledge I had gained over the last
+                year. This version was once again created with ASP.NET, but had a completely new design, once again
+                thanks to Conor.</p>
+            <p>This version included voice chats, screen sharing, servers, friends, and much more.</p>
+            <p>Though I have stopped actively working on FlyeChat, it can be accessed using the link below. It
+                <i>should</i> work.</p>
+            <a href="https://flyechatnew.azurewebsites.net/" target="_blank">https://flyechatnew.azurewebsites.net/</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flye001</title>
+</head>
+
+<body>
+    <div class="spacer"></div>
+    <h1>FlyeChat</h1>
+    <p>FlyeChat is a web-based, real time chat client, similar to Discord.</p>
+
+    <section class="history">
+        <img src="https://cdn.discordapp.com/attachments/814446236845342751/1086070104275562586/unknown.png" alt="" />
+        <div class="content">
+            <h2>History of FlyeChat</h2>
+            <p>
+                I originally started developing it at the start of 2021 in January,
+                using Python with a client and server application, connected using the
+                socketserver library. It worked quite well, even integrating Discord
+                Rich Presence, however there was one major flaw: whenever I converted
+                it to an exe for other people to try, Windows Defender would flag it
+                as a virus.
+            </p>
+            <p>
+                It was this that ultimately drove me to make a web version. I firstly
+                made a Python web version using Flask, however my HTML/CSS skills were
+                not very good. It was at this point Conor joined the project. Ever
+                since, he has been responsible for making the great designs for
+                FlyeChat. The Flask web version worked fairly well, but I felt limited
+                by Python and wanted to try something new.
+            </p>
+            <p>
+                At this point, I decided to learn Microsoft's ASP.NET. I remade the
+                whole system from scratch using ASP.NET and the SignalR, and it turned
+                out pretty well.
+            </p>
+        </div>
+    </section>
+    <section class="flyeV3">
+        <div class="bg"></div>
+        <h2>FlyeChat V3</h2>
+        <div class="content">
+            <p>
+                During late 2021, I once again decided to recreate FlyeChat with the
+                knowledge I had gained over the last year. This version was once again
+                created with ASP.NET, but had a completely new design, once again
+                thanks to Conor.
+            </p>
+            <p>This version included:</p>
+            <div class="cards">
+                <a href="">voice chats</a>
+                <a href="">screen sharing</a>
+                <a href="">servers</a>
+                <a href="">friends</a>
+                <a href="">and more</a>
+            </div>
+        </div>
+    </section>
+    <div class="tryitout">
+        <p>
+            Though I have stopped actively working on FlyeChat, it can be accessed.
+            It should work.
+        </p>
+        <a href="https://flyechatnew.azurewebsites.net/">Check It Out</a>
+    </div>
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+
+            background-color: rgb(10, 10, 10);
+            color: #fff;
+            background-image: radial-gradient(rgba(141, 141, 141, 0.2) 8%,
+                    transparent 8%);
+            background-size: 30px 28px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            /* height: 100vh; */
+            padding: 0px;
+            margin: 0px;
+            /* overflow: hidden; */
+        }
+
+        .spacer {
+            height: 50px;
+        }
+
+        .history {
+            width: 80%;
+            margin: 120px 0px 70px 0px;
+        }
+
+        .history {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .history img {
+            width: 600px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 50px;
+            position: relative;
+            right: 100px;
+        }
+
+        .history .content {
+            padding-left: 100px;
+            position: relative;
+            top: 20px;
+        }
+
+        .history .content p {
+            width: 30vw;
+            padding-left: 50px;
+            color: #ffffff;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            filter: drop-shadow(0px 0px 10px #00000055);
+        }
+
+        .history .content::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 82%;
+            background-color: #5c5c5c99;
+            margin-left: -42px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .history .content p::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #a2a2a2;
+            margin-left: -98px;
+            margin-top: 10px;
+        }
+
+        .flyeV3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 20vw;
+            position: relative;
+        }
+
+        .bg {
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            background-color: #21212189;
+            z-index: -1;
+            transform: rotate(-2deg);
+        }
+
+        .flyeV3 .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70vw;
+        }
+
+        .flyeV3 .content p {
+            width: 50%;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 600px;
+        }
+
+        .cards a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 160px;
+            height: 70px;
+            border-radius: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            border: solid 1px #414141;
+            background-color: rgba(255, 255, 255, 0.061);
+        }
+
+        .tryitout {
+            display: flex;
+            width: 700px;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px;
+        }
+
+        .tryitout a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 500px;
+            height: 40px;
+            border-radius: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            border: solid 1px #414141;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        .tryitout a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            padding-left: 50px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        span {
+            color: rgb(240, 240, 240);
+            font-weight: 400;
+            margin: 0px;
+        }
+
+        i {
+            color: rgb(240, 240, 240);
+        }
+    </style>
+
+    <script>
+        document.getElementById('cards').onmousemove = (e) => {
+            for (const card of document.getElementsByClassName('card')) {
+                const rect = card.getBoundingClientRect(),
+                    x = e.clientX - rect.left,
+                    y = e.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            }
+        };
+    </script>
+
+</body>
+
+</html> -->

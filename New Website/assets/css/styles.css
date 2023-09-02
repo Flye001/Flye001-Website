@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  background-image: radial-gradient(rgba(141, 141, 141, 0.2) 8%, transparent 8%);
+  background-size: 30px 28px;
+  font-family: "JetBrains Mono", monospace;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  padding-top: 3vh;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.back-arrow {
+  position: fixed;
+  left: 0;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  padding-left: 3vh;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .back-arrow {
+    padding-left: 2vh;
+  }
+}
+
+.project {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.project a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+.project img {
+  width: 650px;
+  max-width: 80vw;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.name-logo {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Russo One", sans-serif;
+}
+@media only screen and (max-width: 800px) {
+  .name-logo {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.name {
+  font-family: "Russo One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+.name h1 {
+  font-size: 6rem;
+  letter-spacing: 5px;
+  margin: -20px 0 -20px 0;
+  color: rgb(228, 230, 234);
+}
+@media only screen and (max-width: 800px) {
+  .name h1 {
+    font-size: 4rem;
+  }
+}
+.name h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: rgb(177, 179, 183);
+  letter-spacing: 3px;
+}
+@media only screen and (max-width: 800px) {
+  .name h2 {
+    font-size: 2rem;
+    margin-bottom: 3px;
+  }
+}
+.name h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: rgb(177, 179, 183);
+  letter-spacing: 1px;
+  text-align: right;
+}
+@media only screen and (max-width: 800px) {
+  .name h3 {
+    font-size: 1.5rem;
+    margin-top: 3px;
+  }
+}
+
+.logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 25px;
+  opacity: 50%;
+  width: 4rem;
+  max-width: 100%;
+  height: auto;
+  animation: 1s ease-in-out 0s 1 logoAnimation;
+}
+@media only screen and (max-width: 800px) {
+  .logo {
+    margin: 20px;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 7rem;
+}
+@media screen and (max-width: 800px) {
+  .buttons {
+    gap: 25px;
+    margin-top: 3rem;
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.btn i {
+  font-size: 50px;
+  text-align: center;
+}
+.btn p {
+  font-size: 1.5rem;
+  margin: 10px 0 0 0;
+}
+@media screen and (max-width: 800px) {
+  .btn p {
+    font-size: 1rem;
+  }
+}
+
+.btn:hover {
+  color: rgb(203 213 225/var(--tw-text-opacity));
+  text-shadow: 0 0 3px #fff;
+}
+
+.projects-page svg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.4274509804));
+}
+.projects-page h1 {
+  font-size: 3rem;
+}
+.projects-page .indicator {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+.projects-page .indicator .paginator {
+  width: 10px;
+  height: 10px;
+  background-color: #4f4f4f;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: 0.4s cubic-bezier(0.69, 0.01, 0.41, 0.99);
+}
+.projects-page .indicator .active {
+  background-color: #a5a5a5;
+  transform: scale(1.2);
+}
+.projects-page .card-btns {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .projects-page .card-btns {
+    gap: 20px;
+  }
+}
+.projects-page .card-btns button {
+  background: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px rgba(117, 117, 117, 0.527);
+  background-color: rgba(255, 255, 255, 0.037);
+  opacity: 0.5;
+  transition: 200ms;
+}
+@media screen and (max-width: 800px) {
+  .projects-page .card-btns button {
+    display: none;
+  }
+}
+.projects-page .card-btns button.active {
+  cursor: pointer;
+  opacity: 1;
+  border: solid 1px rgba(255, 255, 255, 0.527);
+  background-color: rgba(255, 255, 255, 0.037);
+}
+.projects-page .card-btns button.active:hover {
+  transform: scale(1.2);
+}
+.projects-page .card-container {
+  width: 960px;
+  padding: 50px 10px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .projects-page .card-container {
+    width: 630px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects-page .card-container {
+    width: auto;
+  }
+}
+.projects-page #cards {
+  position: relative;
+  right: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  grid-auto-rows: 1fr 1fr;
+  transition: 0.4s cubic-bezier(0.69, 0.01, 0.41, 0.99);
+}
+@media screen and (max-width: 800px) {
+  .projects-page #cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8 1fr);
+  }
+}
+.projects-page #cards:hover > .card::after {
+  opacity: 1;
+}
+.projects-page .card {
+  background-color: rgba(255, 255, 255, 0.037);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 260px;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  border: solid 1px rgba(255, 255, 255, 0.527);
+  transition: transform 200ms;
+}
+.projects-page .start-card {
+  margin-left: 200vw;
+}
+.projects-page .end-card {
+  margin-right: 200vw;
+}
+.projects-page .card:hover {
+  transform: scale(1.05);
+}
+.projects-page .card:hover::before {
+  opacity: 1;
+}
+.projects-page .card::before,
+.projects-page .card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+.projects-page .card::before {
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.024), transparent 40%);
+  z-index: 3;
+}
+.projects-page .card::after {
+  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.053), transparent 40%);
+  z-index: 1;
+}
+.projects-page .card > .card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+}
+.projects-page h1,
+.projects-page h2,
+.projects-page h3,
+.projects-page h4,
+.projects-page span {
+  color: rgb(240, 240, 240);
+  font-weight: 400;
+  margin: 0px;
+}
+.projects-page i {
+  color: rgb(240, 240, 240);
+}
+.projects-page .card-image {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  overflow: hidden;
+}
+.projects-page .card-image > i {
+  font-size: 6em;
+  opacity: 0.25;
+}
+.projects-page .card-image > img {
+  width: 130px;
+  opacity: 0.75;
+}
+.projects-page .CardInfoWrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  padding: 0px 20px;
+}
+.projects-page .card-info {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+.projects-page .card-info > i {
+  font-size: 1em;
+  height: 20px;
+  line-height: 20px;
+}
+.projects-page .card-info-title > h3 {
+  font-size: 1.1em;
+  line-height: 20px;
+}
+.projects-page .card-info-title > h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85em;
+  margin-top: 8px;
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fPop {
+  from {
+    transform: translate(-70%, 60%) rotate(17deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flPop {
+  from {
+    transform: translate(-40%, 20%) rotate(4deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flyPop {
+  from {
+    transform: translate(-22%, -44%) rotate(-12deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flyePop {
+  from {
+    transform: translate(0%, 23%) rotate(7deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flye0Pop {
+  from {
+    transform: translate(5%, -12%) rotate(5deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flye00Pop {
+  from {
+    transform: translate(57%, 63%) rotate(-3deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes flye001Pop {
+  from {
+    transform: translate(100%, 35%) rotate(1deg);
+  }
+  to {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+}
+@keyframes nameFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate, .buttons {
+  animation: nameFade 1s ease-in-out 0s 1 forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.expload {
+  animation: nameFade 1s ease-in-out 0s 1 forwards;
+}
+
+.expload > :nth-child(1) {
+  transform: translate(-70%, 60%) rotate(17deg);
+  animation: fPop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(2) {
+  transform: translate(-40%, 20%) rotate(4deg);
+  animation: flPop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(3) {
+  transform: translate(-22%, -44%) rotate(-12deg);
+  animation: flyPop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(4) {
+  transform: translate(0%, 23%) rotate(7deg);
+  animation: flyePop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(5) {
+  transform: translate(5%, -12%) rotate(5deg);
+  animation: flye0Pop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(6) {
+  transform: translate(57%, 63%) rotate(-3deg);
+  animation: flye00Pop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload > :nth-child(7) {
+  transform: translate(100%, 35%) rotate(1deg);
+  animation: flye001Pop 1s ease-in-out 0s 1 forwards;
+  animation-delay: 0.25s;
+}
+
+.expload span {
+  display: inline-block;
+  transition: 1s;
+}/*# sourceMappingURL=styles.css.map */
